@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+:root {
+  --primary: rgb(0, 229, 255);
+  --secondary: rgb(167, 151, 255);
+  --secondary2:rgb(208, 140, 240);
+  --alternate: rgb(255, 143, 178);
+  --light: #FFFFFF;
+  --light2: #F0F3BD;
+  --dark: #000000;
+  --dark2: #252525;
+
+  --fake: FakeIdentity;
+  --lemon: Lemon;
+  --roboto: Roboto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "FakeIdentity";
+  src: local("FakeIdentity"),
+    url("./fonts/fake_identity/FakeIdentity.ttf") format("truetype");
+  font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Lemon";
+  src: local("Lemon"),
+    url("./fonts/lemon_milk/LEMONMILK-Regular.otf") format("opentype");
+  font-weight: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("./fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#homepage {
+  padding: 0;
+  font-family: var(--roboto);
+}
+
+
+.container-fluid{
+  padding-left: 0 !important;
+  overflow-x: hidden;
+}
+
+.links {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+}
+
+.links a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.links a:hover {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Button Links */
+#portfolio-button,
+#skills-button
+{
+  width: 30vw;
+  transition: all ease 1s;
+}
+
+.button-link {
+  width: 30vw;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  cursor: pointer;
+  transition: all ease 3s;
+}
+
+.button-link span {
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+}
+
+.links:nth-child(even) .button-link{
+  background-color: red;
+}
+
+.links:nth-child(odd) .button-link{
+  background-color: blue;
+}
+
+.links:nth-child(even){
+  background-color: rgb(100, 100, 100);
+}
+
+.links:nth-child(odd){
+  background-color: rgb(207, 207, 207);
+}
+
+.page {
+  padding: 1rem;
 }

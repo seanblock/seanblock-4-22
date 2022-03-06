@@ -1,0 +1,29 @@
+#portfolio,
+#skills {
+    /* overflow: auto; */
+    width: 70vw;
+    scroll-behavior: smooth;
+    transition: all ease 1s;
+    /* overflow-x: hidden; */
+    text-align: center;
+    position: relative;
+}
+
+#portfolio div{
+    margin: 0;
+    padding: 0;
+}
+
+.animate-width {
+    animation: 2s widthOpen ;
+}
+
+@keyframes widthOpen {
+    from {
+      transform: translateX(20vw);
+    }
+  
+    to {
+      transform: translateX(30vw);
+    }
+}

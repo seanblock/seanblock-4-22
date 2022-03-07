@@ -14,10 +14,10 @@ const MainNav = () => {
                 </Nav>
                 <Nav>
                     <Nav.Link href="https://www.linkedin.com/in/seanrblock/" target="_blank">
-                        <i class="devicon-linkedin-plain colored"></i>
+                        <i className="devicon-linkedin-plain colored"></i>
                     </Nav.Link>
                     <Nav.Link href="https://github.com/seanblock" target="_blank">
-                        <i class="devicon-github-original colored"></i>
+                        <i className="devicon-github-original colored"></i>
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { ClientContext } from "../context/ClientContext";
 import { motion } from "framer-motion";
@@ -14,11 +14,9 @@ const ButtonLink = ({name, page}) => {
     }
 
     useEffect(()=>{
-        console.log(window.location.pathname)
         switch(window.location.pathname){
       
             case '/portfolio':
-                console.log("Portfolio")
                 setOpen(true)
                 window.scrollTo(0, window.innerHeight * 1)
                 document.getElementById('homepage').style.overflow = 'hidden'
@@ -29,7 +27,6 @@ const ButtonLink = ({name, page}) => {
                 break
             
             case '/skills':
-                console.log("Skills")
                 setOpen(true)
                 window.scrollTo(0, window.innerHeight * 2)
                 document.getElementById('homepage').style.overflow = 'hidden'
@@ -37,6 +34,16 @@ const ButtonLink = ({name, page}) => {
                 document.documentElement.style.overflowY = 'hidden'
                 document.getElementById(`skills-button`).style.width = '10vw'
                 document.getElementById(`skills`).style.width ='90vw';
+                break
+            
+            case '/about':
+                setOpen(true)
+                window.scrollTo(0, window.innerHeight * 3)
+                document.getElementById('homepage').style.overflow = 'hidden'
+                document.getElementById(`about`).scrollTo(0, 0)
+                document.documentElement.style.overflowY = 'hidden'
+                document.getElementById(`about-button`).style.width = '10vw'
+                document.getElementById(`about`).style.width ='90vw';
                 break
         }
         

@@ -15,6 +15,8 @@ import About from './about/About';
 // Context
 import { ClientContext } from './context/ClientContext'
 
+import { Routes, Route } from 'react-router-dom';
+
 function App() {
 
   // States
@@ -25,21 +27,29 @@ function App() {
     <ClientContext.Provider value={{
       open, setOpen
     }}>
+    
     <Container fluid id="homepage">
-      <Header />
-      <div id="portfolio-link" className="links">
-        <ButtonLink name={'portfolio'} page={1}/>
-        <Portfolio />
-      </div>
-      <div id="skills-link" className="links">
-        <ButtonLink name={'skills'} page={2}/>
-        <Skills />
-      </div>
-      <div id="about-link" className="links">
-        <ButtonLink name={'about'} page={3}/>
-        <About />
-      </div>
+      {/* <Routes> */}
+      {/* <Route path="/" element={ */}
+        <>
+          <Header />
+          <div id="portfolio-link" className="links">
+            <ButtonLink name={'portfolio'} page={1}/>
+            <Portfolio />
+          </div>
+          <div id="skills-link" className="links">
+            <ButtonLink name={'skills'} page={2}/>
+            <Skills />
+          </div>
+          <div id="about-link" className="links">
+            <ButtonLink name={'about'} page={3}/>
+            <About />
+          </div>
+        </>
+      {/* }/> */}
+      {/* </Routes> */}
     </Container>
+    
     </ClientContext.Provider>
   );
 }

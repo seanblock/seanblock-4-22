@@ -40,7 +40,7 @@ const Header = () => {
             <div id="experience">
                 <div className="exp">
                     <span><i class="devicon-html5-plain colored"></i></span>
-                    <div><div>HTML / CSS</div></div>
+                    <div><div>HTML/CSS</div></div>
                 </div>
                 <div className="exp">
                     <span><i class="devicon-react-plain colored"></i></span>

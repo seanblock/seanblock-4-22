@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/seanblock-4-22/static/css/main.e095a3ad.css",
-    "main.js": "/seanblock-4-22/static/js/main.fcedc250.js",
+    "main.js": "/seanblock-4-22/static/js/main.5997bd09.js",
     "static/js/787.2e363e43.chunk.js": "/seanblock-4-22/static/js/787.2e363e43.chunk.js",
     "static/media/Roboto-Medium.ttf": "/seanblock-4-22/static/media/Roboto-Medium.d2d7f0c01bffaa5ec8f7.ttf",
     "static/media/LEMONMILK-Regular.otf": "/seanblock-4-22/static/media/LEMONMILK-Regular.55fc24317b9c2b507dd8.otf",
@@ -9,11 +9,11 @@
     "static/media/FakeIdentity.ttf": "/seanblock-4-22/static/media/FakeIdentity.939548e4ee3aeb5fda51.ttf",
     "index.html": "/seanblock-4-22/index.html",
     "main.e095a3ad.css.map": "/seanblock-4-22/static/css/main.e095a3ad.css.map",
-    "main.fcedc250.js.map": "/seanblock-4-22/static/js/main.fcedc250.js.map",
+    "main.5997bd09.js.map": "/seanblock-4-22/static/js/main.5997bd09.js.map",
     "787.2e363e43.chunk.js.map": "/seanblock-4-22/static/js/787.2e363e43.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e095a3ad.css",
-    "static/js/main.fcedc250.js"
+    "static/js/main.5997bd09.js"
   ]
 }

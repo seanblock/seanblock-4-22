@@ -59,6 +59,7 @@ const ButtonLink = ({name, page}) => {
                     setTimeout(()=>{
                         document.getElementById(`${name}-button`).style.width = '30vw'
                         document.getElementById(`${name}`).style.width ='70vw';
+                        document.getElementById(`${name}`).style.overflowY = 'hidden'
                         navigate(`/`)
                         setOpen(false)
                     }, 500)
@@ -66,6 +67,8 @@ const ButtonLink = ({name, page}) => {
                     setTimeout(()=>{
                         document.getElementById(`${name}-button`).style.width = '10vw'
                         document.getElementById(`${name}`).style.width ='90vw';
+                        document.getElementById(`${name}`).style.overflowY = 'auto'
+
                         navigate(`/${name}`)
                         setOpen(true)
                     }, 500)

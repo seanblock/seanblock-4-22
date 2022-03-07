@@ -1,0 +1,87 @@
+#skills {
+    font-family: var(--lemon);
+    color: var(--light);
+}
+
+#skills h1 {
+    margin: 2rem 0 4rem 0;
+    font-size: 5rem;
+    color: var(--light2);
+}
+
+#skills h4 {
+    display: inline;
+    padding: 1rem;
+    font-size: 4rem;
+    font-family: var(--fake);
+    text-transform: uppercase;
+    margin-bottom: 3rem !important;
+}
+
+#skills span {
+    font-size: 3rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+}
+
+.skill-container {
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.skill-logo {
+    font-size: 6rem;
+    margin: 1rem;
+}
+
+.skill-name {
+    font-size: 3rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+#skill-back {
+    color: var(--alternate);
+}
+
+#skill-front {
+    color: var(--primary);
+}
+
+#skill-programming {
+    color: var(--secondary);
+}
+
+#skill-software {
+    color: var(--light2);
+}
+
+@media only screen and (max-width: 500px) {
+    #skills h1 {
+      font-size: 3rem;
+      margin: 2rem 0 2rem 0;
+    }
+    
+    #skills h4 {
+      font-size: 1.5rem;
+    }
+
+    .skill-container {
+        margin: 0;
+    }
+
+    .skill-logo {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .skill-name {
+        font-size: 1.5rem !important;
+        grid-column: 2 / 3;
+        text-align: left;
+        margin: 1rem;
+    }
+}

@@ -47,8 +47,8 @@ const Header = () => {
                     <div><div>REACT</div></div>
                 </div>
                 <div className="exp">
-                    <span><i class="devicon-javascript-plain colored"></i></span>
-                    <div><div>JAVASCRIPT</div></div>
+                    <span><i class="devicon-nodejs-plain colored"></i></span>
+                    <div><div>NODEJS</div></div>
                 </div>
                 <div className="exp">
                     <span><i class="devicon-mysql-plain colored"></i></span>

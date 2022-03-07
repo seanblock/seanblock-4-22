@@ -3,7 +3,7 @@
   --secondary: rgb(167, 151, 255);
   --secondary2:rgb(208, 140, 240);
   --alternate: rgb(255, 143, 178);
-  --light: #FFFFFF;
+  --light: #f3f3f3;
   --light2: #F0F3BD;
   --dark: #000000;
   --dark2: #252525;
@@ -60,12 +60,12 @@
 
 .links a {
   text-decoration: none;
-  color: white;
+  color: var(--light);
 }
 
 .links a:hover {
   text-decoration: none;
-  color: whitesmoke;
+  color: var(--light2);
 }
 
 /* Button Links */
@@ -85,7 +85,14 @@
   align-items: center;
   font-size: 5rem;
   cursor: pointer;
-  transition: all ease 3s;
+  transition: all ease-in-out .25s;
+  font-family: var(--fake);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
+}
+
+.button-link:hover {
+  color: var(--light);
 }
 
 .button-link span {
@@ -93,22 +100,60 @@
   text-transform: uppercase;
 }
 
-.links:nth-child(even) .button-link{
-  background-color: red;
+#portfolio-button{
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--alternate)
+  );
+}
+
+#skills-button{
+  background: linear-gradient(
+    135deg,
+    var(--secondary),
+    var(--primary)
+  );
+}
+
+#about-button{
+  background: linear-gradient(
+    135deg,
+    var(--alternate),
+    var(--secondary)
+  );
 }
 
 .links:nth-child(odd) .button-link{
   background-color: blue;
 }
 
-.links:nth-child(even){
-  background-color: rgb(100, 100, 100);
+.links:nth-child(odd){
+  background-color: var(--dark2);
 }
 
-.links:nth-child(odd){
-  background-color: rgb(207, 207, 207);
+.links:nth-child(even){
+  background-color: var(--light);
 }
 
 .page {
   padding: 1rem;
+  overflow-x: hidden !important;
+  overflow-y: hidden;
+}
+
+#portfolio,
+#skills,
+#about {
+    width: 70vw;
+    scroll-behavior: smooth;
+    transition: all ease 1s;
+    text-align: center;
+    position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+  .button-link {
+    font-size: 2rem;
+  }
 }

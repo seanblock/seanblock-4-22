@@ -1,13 +1,4 @@
-#portfolio,
-#skills {
-    /* overflow: auto; */
-    width: 70vw;
-    scroll-behavior: smooth;
-    transition: all ease 1s;
-    /* overflow-x: hidden; */
-    text-align: center;
-    position: relative;
-}
+
 
 #portfolio div{
     margin: 0;

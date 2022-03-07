@@ -36,7 +36,7 @@ function App() {
         <Skills />
       </div>
       <div id="about-link" className="links">
-        <ButtonLink name={'about'} page={2}/>
+        <ButtonLink name={'about'} page={3}/>
         <About />
       </div>
     </Container>
